@@ -1,0 +1,8 @@
+dist/
+node_modules/
+secrets/
+.env
+.DS_Store
+requests/
+data/df2.csv
+data/df3.csv
