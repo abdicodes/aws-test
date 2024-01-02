@@ -1,6 +1,0 @@
-dist/
-node_modules/
-secrets/
-.env
-.DS_Store
-requests/
