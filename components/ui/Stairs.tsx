@@ -35,7 +35,7 @@ const Stairs = () => {
                   ease: 'easeInOut',
                   delay: reverseIndex(index) * 0.1,
                 }}
-                className="h-full w-full relative bg-black dark:bg-slate-200"
+                className="h-full w-full relative bg-white"
               ></motion.div>
             )
           }),

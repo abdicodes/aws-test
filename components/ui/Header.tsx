@@ -4,12 +4,12 @@ import Nav from './Nav'
 
 const Header = () => {
   return (
-    <header className="py-8 xl:py-12">
+    <header className="py-8 xl:py-12 text-white">
       <div className="container mx-auto flex justify-between items-center">
         {/* logo */}
         <Link href="/">
           <h1 className="text-4xl font-semibold">
-            Abdi <span>.</span>
+            Abdi <span className="text-accent">.</span>
           </h1>
         </Link>
         {/* Desktop nav */}
@@ -23,7 +23,7 @@ const Header = () => {
 
         {/* Mobile Nav */}
 
-        <div className="flex xl:hidden">
+        <div className=" xl:hidden">
           <Nav />
           <Link href="/contact">
             <Button>Hire me</Button>
