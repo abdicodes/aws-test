@@ -22,7 +22,29 @@ const MobileNav = () => {
       </SheetTrigger>
       <SheetContent className="flex flex-col">
         {/* logo */}
-        <div>logo</div>
+        <div className="mt-32 mb-40 text-center text-2xl">
+          <Link href="/">
+            <h1 className="text-4xl font-semibold">
+              Abdi <span className="text-accent">.</span>
+            </h1>
+          </Link>
+        </div>
+        <nav className="flex flex-col justify-center items-center gap-8">
+          {links.map((link, i) => {
+            return (
+              <Link
+                key={i}
+                href={link.path}
+                className={`${
+                  link.path === pathname &&
+                  'text-accent border-b-2 border-accent'
+                } capitalize text-xl hover:text-accent transition-all`}
+              >
+                {link.name}
+              </Link>
+            )
+          })}
+        </nav>
       </SheetContent>
     </Sheet>
   )
