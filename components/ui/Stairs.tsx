@@ -36,7 +36,7 @@ const Stairs = () => {
                   delay: reverseIndex(index) * 0.1,
                 }}
                 className="h-full w-full relative bg-white"
-              ></motion.div>
+              />
             )
           }),
       ]}
