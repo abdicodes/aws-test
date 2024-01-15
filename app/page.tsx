@@ -1,13 +1,13 @@
 import { Button } from '@/components/ui/button'
+import Social from '@/components/ui/Social'
+import Link from 'next/link'
 import { FiDownload } from 'react-icons/fi'
+
 export default function Home() {
   return (
-    <section className="h-full">
+    <section className="h-full ">
       <div className="container mx-auto h-full">
-        <div
-          className="flex flex-col xl:flex-row items-center justify-between
-        xl:pt-8 xl:pb-24 "
-        >
+        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24 ">
           {/* text */}
           <div className="text-center xl:text-left">
             <span>Software Developer</span>
@@ -31,7 +31,20 @@ export default function Home() {
                 <span> Download CV</span>
                 <FiDownload className="text-xl" />
               </Button>
-              {/* <div>socials</div> */}
+              <div className="mb-8 xl:mb-0">
+                <Social
+                  containerStyles="flex gap-6"
+                  iconStyle="w-9 h-9 border 
+                border-accent rounded-full flex justify-center items-center text-accent
+                text-base hover:bg-accent
+                hover:text-primary hover:transition-all duration-500"
+                />
+              </div>
+            </div>
+            <div className="hidden xl:flex items-center gap-8">
+              <Link href="/contact">
+                <Button>Hire me</Button>
+              </Link>
             </div>
           </div>
 
