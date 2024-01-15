@@ -41,11 +41,6 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="hidden xl:flex items-center gap-8">
-              <Link href="/contact">
-                <Button>Hire me</Button>
-              </Link>
-            </div>
           </div>
 
           {/* photo */}
