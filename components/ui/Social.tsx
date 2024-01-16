@@ -7,8 +7,8 @@ type SocialProps = {
 }
 
 const socials = [
-  { icon: <FaGithub />, path: '' },
-  { icon: <FaLinkedin />, path: '' },
+  { icon: <FaGithub />, path: 'https://github.com/abdicodes' },
+  { icon: <FaLinkedin />, path: 'https://www.linkedin.com/in/suldaan/' },
 ]
 
 const Social = ({ containerStyles, iconStyle }: SocialProps) => {
@@ -16,7 +16,13 @@ const Social = ({ containerStyles, iconStyle }: SocialProps) => {
     <div className={containerStyles}>
       {socials.map((item, index) => {
         return (
-          <Link key={index} href={item.path} className={iconStyle}>
+          <Link
+            key={index}
+            href={item.path}
+            className={iconStyle}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {item.icon}
           </Link>
         )

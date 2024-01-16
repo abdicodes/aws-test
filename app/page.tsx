@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button'
 import Social from '@/components/ui/Social'
 import Link from 'next/link'
 import { FiDownload } from 'react-icons/fi'
+import Photo from '@/components/ui/Photo'
 
 export default function Home() {
   return (
@@ -44,7 +45,7 @@ export default function Home() {
           </div>
 
           {/* photo */}
-          {/* <div>photo</div> */}
+          <Photo />
         </div>
       </div>
     </section>
