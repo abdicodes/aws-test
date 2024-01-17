@@ -19,9 +19,9 @@ const PageTransition = ({ children }: PageTransitionProps) => {
           opacity: 1,
           transition: { delay: 1, duration: 0.4, ease: 'easeInOut' },
         }}
-        className="h-screen w-screen fixed bg-primary "
+        className="min-h-screen w-screen fixed bg-primary "
       >
-        {children}
+        <div> {children}</div>
       </motion.div>
     </AnimatePresence>
   )
