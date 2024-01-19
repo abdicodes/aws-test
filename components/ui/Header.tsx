@@ -5,7 +5,7 @@ import MobileNav from './MobileNav'
 
 const Header = () => {
   return (
-    <header className="py-8 xl:py-12 px-8 text-white">
+    <header className="pt-4 pb-4 xl:pb-6 px-8 text-white">
       <div className="container mx-auto flex justify-between items-center">
         {/* logo */}
         <Link href="/">
