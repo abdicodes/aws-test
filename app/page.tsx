@@ -7,7 +7,7 @@ import Stats from '@/components/ui/Stats'
 
 export default function Home() {
   return (
-    <section className="h-full ">
+    <section className="h-full relative">
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24 ">
           {/* text */}
