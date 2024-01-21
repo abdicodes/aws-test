@@ -3,6 +3,7 @@ import Social from '@/components/ui/Social'
 import { FiDownload } from 'react-icons/fi'
 import Photo from '@/components/ui/Photo'
 import Stats from '@/components/ui/Stats'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -24,14 +25,17 @@ export default function Home() {
             </p>
             {/* socials links */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button
-                variant="outline"
-                size="lg"
-                className="uppercase flex items-center gap-2"
-              >
-                <span> Download CV</span>
-                <FiDownload className="text-xl" />
-              </Button>
+              <Link href="/CV24.pdf" target="_blank" rel="noopener noreferrer">
+                {' '}
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="uppercase flex items-center gap-2"
+                >
+                  <span> Download CV</span>
+                  <FiDownload className="text-xl" />
+                </Button>
+              </Link>
               <div className="mb-8 xl:mb-0">
                 <Social
                   containerStyles="flex gap-6"
