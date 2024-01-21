@@ -1,6 +1,5 @@
 'use client'
 
-import { stat } from 'fs'
 import CountUp from 'react-countup'
 
 const stats = [

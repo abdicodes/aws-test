@@ -1,6 +1,5 @@
 import { Button } from '@/components/ui/button'
 import Social from '@/components/ui/Social'
-import Link from 'next/link'
 import { FiDownload } from 'react-icons/fi'
 import Photo from '@/components/ui/Photo'
 import Stats from '@/components/ui/Stats'
