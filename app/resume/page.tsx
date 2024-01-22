@@ -114,16 +114,25 @@ const education = {
 
 const skills = {
   title: 'My skills',
-  decsription: 'Skills that I can use professionally',
+  decsription: 'Technologies that I can use professionally',
   skillsList: [
     { icon: <FaHtml5 />, name: 'HTML 5' },
     { icon: <FaCss3 />, name: ' CSS 3' },
-
     { icon: <FaJs />, name: 'JavaScript' },
+    { icon: <SiTypescript />, name: 'TypeScript' },
     { icon: <FaReact />, name: 'React.js' },
     { icon: <FaNodeJs />, name: 'Node.js' },
     { icon: <SiNextdotjs />, name: 'Next.js' },
     { icon: <SiTailwindcss />, name: 'Tailwind.css' },
+    { icon: <FaAws />, name: 'AWS' },
+    { icon: <FaDocker />, name: 'Docker' },
+    { icon: <SiPython />, name: 'Python' },
+    { icon: <SiPostgresql />, name: 'Postgres' },
+    { icon: <SiMysql />, name: 'MySQL' },
+    { icon: <SiGraphql />, name: 'GraphQL' },
+    { icon: <SiCplusplus />, name: 'C++' },
+    { icon: <SiCsharp />, name: 'C#' },
+    { icon: <SiDotnet />, name: 'ASP.NET' },
   ],
 }
 const Resume = () => {
@@ -217,8 +226,20 @@ const Resume = () => {
                 </ScrollArea>
               </div>
             </TabsContent>
-            <TabsContent value="skills" className="w-full">
-              skills
+            <TabsContent value="skills" className="w-full h-full">
+              <div className="flex flex-col gap-[30px]">
+                <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                  <h3 className="text-4xl font-bold">{skills.title}</h3>
+                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                    {skills.decsription}
+                  </p>
+                </div>
+                <ul className="grid ">
+                  {skills.skillsList.map((skill, index) => {
+                    return <li key={index}>{skill.name}</li>
+                  })}
+                </ul>
+              </div>
             </TabsContent>
             <TabsContent value="about" className="w-full">
               about
