@@ -51,10 +51,7 @@ const info = [
     fieldName: 'Phone',
     fieldValue: '(+358) 44 920 8411',
   },
-  {
-    fieldName: 'LinkedIn',
-    fieldValue: 'https://www.linkedin.com/in/suldaan/alue',
-  },
+
   {
     fieldName: 'Email',
     fieldValue: 'suldaan.89@hotmail.com',
