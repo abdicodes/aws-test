@@ -8,6 +8,7 @@ import {
   FaNodeJs,
   FaAws,
   FaDocker,
+  FaFigma,
 } from 'react-icons/fa'
 import {
   SiTailwindcss,
@@ -20,6 +21,8 @@ import {
   SiPostgresql,
   SiMysql,
   SiGraphql,
+  SiCypress,
+  SiSelenium,
 } from 'react-icons/si'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import {
@@ -33,7 +36,9 @@ import { motion } from 'framer-motion'
 
 const about = {
   tile: 'About me',
-  description: `A Full-stack web and mobile app developer, as well as a machine learning engineer, driven by a deep passion for solving complex problems. `,
+  description: `I enjoy working in teams where I can make an impact and keep learning. I'm always interested in using technology to create meaningful solutions and open to new challenges.
+
+Feel free to reach out if you'd like to connect or explore opportunities!`,
 }
 
 const info = [
@@ -118,12 +123,13 @@ const skills = {
   skillsList: [
     { icon: <FaHtml5 />, name: 'HTML 5' },
     { icon: <FaCss3 />, name: ' CSS 3' },
+    { icon: <FaFigma />, name: 'Figma' },
+    { icon: <SiTailwindcss />, name: 'Tailwind.css' },
     { icon: <FaJs />, name: 'JavaScript' },
     { icon: <SiTypescript />, name: 'TypeScript' },
     { icon: <FaReact />, name: 'React.js' },
     { icon: <FaNodeJs />, name: 'Node.js' },
     { icon: <SiNextdotjs />, name: 'Next.js' },
-    { icon: <SiTailwindcss />, name: 'Tailwind.css' },
     { icon: <FaAws />, name: 'AWS' },
     { icon: <FaDocker />, name: 'Docker' },
     { icon: <SiPython />, name: 'Python' },
@@ -133,6 +139,8 @@ const skills = {
     { icon: <SiCplusplus />, name: 'C++' },
     { icon: <SiCsharp />, name: 'C#' },
     { icon: <SiDotnet />, name: 'ASP.NET' },
+    { icon: <SiCypress />, name: 'cypress' },
+    { icon: <SiSelenium />, name: 'Selenium' },
   ],
 }
 const Resume = () => {
@@ -256,8 +264,32 @@ const Resume = () => {
                 </ul>
               </div>
             </TabsContent>
-            <TabsContent value="about" className="w-full">
-              about
+            <TabsContent
+              value="about"
+              className="w-full text-center xl:text-left"
+            >
+              <div className="flex flex-col gap-[30px]">
+                <h3 className="text-4xl font-bold "> {about.tile}</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  {about.description}
+                </p>
+                <ul
+                  className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px]
+                mx-auto xl:mx-0"
+                >
+                  {info.map((item, index) => {
+                    return (
+                      <li
+                        key={index}
+                        className="flex items-center justify-center xl:justify-start gap-4"
+                      >
+                        <span className="text-white/60"> {item.fieldName}</span>
+                        <span className="text-xl">{item.fieldValue}</span>
+                      </li>
+                    )
+                  })}
+                </ul>
+              </div>
             </TabsContent>
           </div>
         </Tabs>
