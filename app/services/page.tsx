@@ -36,8 +36,8 @@ const services = [
 ]
 const Services = () => {
   return (
-    <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0">
-      <div className="container mx-auto">
+    <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0 px-12 ">
+      <div className="container mx-auto ">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{
@@ -73,7 +73,7 @@ const Services = () => {
                 </div>
                 {/* title */}
                 <h2
-                  className="text-[42px] font-bold leading-none text-white
+                  className="text-[32px] font-bold leading-none text-white
                 group-hover:text-accent transition-all duration-500"
                 >
                   {service.title}

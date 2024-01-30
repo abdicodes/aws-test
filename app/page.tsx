@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <section className="h-full relative">
+    <section className="h-full relative mb-8 mx-8 ">
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24 ">
           {/* text */}
@@ -20,8 +20,6 @@ export default function Home() {
             <p className="max-w-[500px] mb-9 text-white/80">
               I excel at solving problems and crafting elegant digital
               experiences.
-              <br />I am proficient in various technologies mainly Fullstack web
-              and mobile apps development.
             </p>
             {/* socials links */}
             <div className="flex flex-col xl:flex-row items-center gap-8">

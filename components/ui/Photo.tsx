@@ -21,16 +21,18 @@ const Photo = () => {
             opacity: 1,
             transition: { delay: 2.4, duration: 0.4, ease: 'easeInOut' },
           }}
-          className="w-[298px] h-[198px] xl:w-[498px] xl:h-[298px] mix-blend-lighten absolute"
+          className="w-[298px] h-[198px] xl:w-[498px] xl:h-[298px] mix-blend-lighten absolute "
         >
-          <Image
-            src="/images/photo.png"
-            alt="avatar"
-            className="object-contain"
-            priority
-            quality={100}
-            fill
-          />
+          <div className="opacity-80">
+            <Image
+              src="/images/photo.png"
+              alt="avatar"
+              className="object-contain"
+              priority
+              quality={100}
+              fill
+            />
+          </div>
         </motion.div>
         {/* circle */}
         <motion.svg
