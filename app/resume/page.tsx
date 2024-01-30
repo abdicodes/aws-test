@@ -53,10 +53,6 @@ const info = [
   },
 
   {
-    fieldName: 'Email',
-    fieldValue: 'suldaan.89@hotmail.com',
-  },
-  {
     fieldName: 'Freelancing',
     fieldValue: 'Available',
   },
@@ -65,18 +61,14 @@ const info = [
 const experience = {
   icon: '/images/resume/experienve.png',
   title: 'My experiences',
-  description: 'My work experiences both in technical and non-technical roles.',
+  description: 'My work experiences.',
   items: [
     {
       company: 'Abdi trading Oy',
       position: 'Entreprenuer',
       duration: '2022 - present',
     },
-    {
-      company: 'Deepcode Innovations Ltd',
-      position: 'Trainee web developer',
-      duration: '02-2023 - 08-2023',
-    },
+
     {
       company: 'Posti Oyj',
       position: 'Mail hanlding',
@@ -88,7 +80,7 @@ const experience = {
 const education = {
   icon: '/images/resume/education.png',
   title: 'My education',
-  description: 'Courses and degrees obtained ',
+  description: 'Courses and degree obtained.',
   items: [
     {
       institution: 'University of London',
@@ -116,7 +108,8 @@ const education = {
 
 const skills = {
   title: 'My skills',
-  decsription: 'Technologies that I can use professionally',
+  decsription:
+    'Technologies and programming languages that I have worked with.',
   skillsList: [
     { icon: <FaHtml5 />, name: 'HTML 5' },
     { icon: <FaCss3 />, name: ' CSS 3' },
@@ -148,7 +141,7 @@ const Resume = () => {
         opacity: 1,
         transition: { delay: 2.4, duration: 0.4, ease: 'easeIn' },
       }}
-      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
+      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0 px-8"
     >
       <div className="container mx-auto">
         <Tabs
