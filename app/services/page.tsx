@@ -7,31 +7,29 @@ import { motion } from 'framer-motion'
 const services = [
   {
     num: '01',
-    title: 'Web Development',
+    title: 'Full stack Development',
     href: '',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget libero quis felis rhoncus ultricies nec in nunc. Curabitur efficitur efficitur semper. Etiam non dui euismod, tempus tellus eu, viverra tortor. Integer convallis ipsum quis nibh posuere porta',
+      'Full stack web and mobile development including database modelling',
   },
   {
     num: '02',
     title: 'DevOps',
     href: '',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget libero quis felis rhoncus ultricies nec in nunc. Curabitur efficitur efficitur semper. Etiam non dui euismod, tempus tellus eu, viverra tortor. Integer convallis ipsum quis nibh posuere porta',
+      'CI/CD workflows. GitHub actions, automation, Cloud architecture. ',
   },
   {
     num: '03',
     title: 'Big data analysis',
     href: '',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget libero quis felis rhoncus ultricies nec in nunc. Curabitur efficitur efficitur semper. Etiam non dui euismod, tempus tellus eu, viverra tortor. Integer convallis ipsum quis nibh posuere porta',
+    description: 'Analysing your business data using Python and its libraries.',
   },
   {
     num: '04',
     title: 'ML and LLM models engineering',
     href: '',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget libero quis felis rhoncus ultricies nec in nunc. Curabitur efficitur efficitur semper. Etiam non dui euismod, tempus tellus eu, viverra tortor. Integer convallis ipsum quis nibh posuere porta',
+    description: 'Gen AI, LLM prompting and fine tuning, ML models, ',
   },
 ]
 const Services = () => {

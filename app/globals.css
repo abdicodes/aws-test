@@ -50,3 +50,8 @@ body {
     -webkit-text-stroke: 1px #00ff99;
   }
 }
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px #27272c inset !important; /* Replace with your desired background color */
+  -webkit-text-fill-color: #ffffff !important; /* Replace with your desired text color */
+}

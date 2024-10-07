@@ -18,34 +18,65 @@ import WorkSliderBtns from '@/components/ui/WorkSliderBtns'
 const projects = [
   {
     num: '01',
-    category: 'frontend',
-    title: 'Project 1',
-    description: 'lorem',
-    stack: [{ name: 'Html 5' }, { name: 'Css 3' }, { name: 'TypeScript' }],
+    category: 'Fullstack',
+    title: 'HealthEase',
+    description:
+      'a patient data management where healthcare providers can manage appointmnets, lab and scan work and prescriptions. fully containerized.',
+    stack: [
+      { name: 'TypeScript' },
+      { name: 'React.js' },
+      { name: 'Node.js' },
+      { name: 'Postgres' },
+      { name: 'TailwindCss' },
+      { name: 'Docker' },
+    ],
     image: '/assets/work/thumb1.png',
     live: '',
-    github: '',
+    github: 'https://github.com/abdicodes/Health-Ease',
   },
   {
     num: '02',
-    category: 'frontend',
-    title: 'Project 2',
-    description: 'lorem ipsum',
-    stack: [{ name: 'Html 5' }, { name: 'Css 3' }, { name: 'TypeScript' }],
+    category: 'Desktop',
+    title: 'DJ App ',
+    description:
+      'Audio-Mixer application that can load, play and mix audio tracks',
+    stack: [{ name: 'C++' }, { name: 'JUICE' }],
     image: '/assets/work/thumb2.png',
     live: '',
-    github: '',
+    github: 'https://github.com/abdicodes/DJApp',
   },
 
   {
     num: '03',
-    category: 'fullstack',
-    title: 'Project 3',
-    description: 'lorem ipsum switch',
-    stack: [{ name: 'Html 5' }, { name: 'Css 3' }, { name: 'TypeScript' }],
+    category: 'Mobile App',
+    title: 'Rate repositories',
+    description: 'A mobile app to rate Github repositories and leave reviews. ',
+    stack: [
+      { name: 'Javascript' },
+      { name: 'Css' },
+      { name: 'React Native' },
+      { name: 'Apollo GraphQL' },
+    ],
     image: '/assets/work/thumb3.png',
+    live: 'https://www.youtube.com/watch?v=AxTSqwjZKIQ&t=414s',
+    github: 'https://github.com/abdicodes/rate-repository-app',
+  },
+  {
+    num: '04',
+    category: 'Machine learning',
+    title: 'Hate speech detection',
+    description:
+      'A jupyter notebook that uses dataset of Tweets from X and determines if a tweet contains hate speech',
+    stack: [
+      { name: 'Python' },
+      { name: 'NLP' },
+      { name: 'supervised machine learning' },
+      { name: 'data visualisation' },
+    ],
+    image: '/assets/work/thumb4.png',
     live: '',
-    github: '',
+    github:
+      'https://github.com/abdicodes/text-cassification/blob/main/Hate%20speech%20detection.ipynb',
   },
 ]
 const Work = () => {
@@ -82,10 +113,16 @@ const Work = () => {
               >
                 {project.category} project
               </h2>
+              <h3
+                className="text-[28px]  leading-none text-white/80 group-hover:text-accent
+              transition-all duration-500 capitalize"
+              >
+                {project.title}
+              </h3>
               {/* project description */}
               <p className="text-white/60">{project.description}</p>
               {/* stack */}
-              <ul className="flex gap-4">
+              <ul className="flex gap-4 flex-wrap">
                 {project.stack.map((item, index) => {
                   return (
                     <li key={index} className="text-xl text-accent">
